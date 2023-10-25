@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#6750A3"
+        android:gravity="center"
+        android:text="DDSOFT"
+        android:textColor="#D6DCE3"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="76dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Quantity"
+        android:imeOptions="actionNext"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#D1C7C7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="35dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Weight"
+        android:imeOptions="actionNext"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#D1C7C7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="35dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Color"
+        android:imeOptions="actionNext"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#D1C7C7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="343dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="35dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Notes"
+        android:imeOptions="actionNext"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#D1C7C7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Rate"
+        android:imeOptions="actionNext"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#D1C7C7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/quantity"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Price"
+        android:imeOptions="actionNext"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#D1C7C7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/rate"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/OpenCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Open Camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="64dp"
+        android:text="Insert Data   "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toEndOf="@+id/OpenCamera" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Save Excel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/outputTextView"
+        android:layout_width="405dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="48dp"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
